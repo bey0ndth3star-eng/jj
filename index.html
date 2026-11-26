@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>Lumen – chat en ligne</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scene" aria-hidden="true"><div class="sheen"></div><div class="vig"></div><div class="grain"></div></div>
+
+<div id="splash" aria-hidden="true">
+  <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" pathLength="1"/><path pathLength="1" d="M20 24h24a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H33l-8 6v-6h-5a4 4 0 0 1-4-4V28a4 4 0 0 1 4-4z"/></svg>
+  <div class="word"><span style="--i:0">L</span><span style="--i:1">u</span><span style="--i:2">m</span><span style="--i:3">e</span><span style="--i:4">n</span></div>
+</div>
+
+<div id="app">
+  <header class="glass">
+    <div class="me"><div id="meav"></div><input id="name" placeholder="Votre pseudo" maxlength="24" aria-label="Pseudo"></div>
+    <div class="stack" id="stack"></div>
+  </header>
+  <nav id="rooms" class="glass" aria-label="Salons"><i id="lens"></i></nav>
+  <div id="log"><div class="note">Connexion…</div></div>
+  <button id="jump" class="glass"></button>
+  <div id="typing"><span class="dots"><i></i><i></i><i></i></span><span id="tt"></span></div>
+  <div class="bar glass">
+    <input id="text" placeholder="Écrivez un message…" maxlength="500" autocomplete="off" disabled>
+    <button id="send" disabled aria-label="Envoyer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2l-7 20-4-9-9-4z"/></svg></button>
+  </div>
+</div>
+
+<script src="backend-local.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
